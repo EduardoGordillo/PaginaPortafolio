@@ -1,0 +1,36 @@
+.carta__form {
+  background-color: #D2CFCF ;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  height: 90%;
+  width: 95%;
+  align-content: center;
+  padding: .5rem;
+ 
+  text-align-last: center;
+
+  
+}
+
+
+
+.card__title {
+
+  font-size: 2rem;
+  
+}
+
+@media screen and (max-width: 800px){
+ 
+
+  .carta__form{
+      grid-area: 1/1;
+      width: 100%;
+      height: calc(100 - 60PX);
+
+
+  }
+  .carta__gif{
+      display: none;
+  }
+}

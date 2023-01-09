@@ -1,0 +1,116 @@
+.contacto {
+    display: grid;
+    background: rgb(8, 10, 23);
+    background: linear-gradient(187deg, rgba(8, 10, 23, 1) 0%, rgba(22, 13, 13, 1) 36%, rgba(23, 14, 14, 1) 86%, rgba(48, 41, 41, 1) 97%, rgba(161, 161, 161, 1) 100%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    height: calc(100vh - 60px);
+    padding: 1rem;
+}
+
+.carta__form {
+
+    grid-row: auto;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.carta__gif {
+    grid-row: auto;
+    grid-column: 2/3;
+    background: url(/img/contacto/slide10_1.gif);
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    background-size: contain;
+
+    width: 75;
+    height: 65%;
+
+
+}
+
+.button {
+
+    background-color: #212121;
+    border-radius: 7px;
+    margin-top: .6rem;
+    margin-bottom: .5rem;
+    max-width: 70%;
+    padding: 1.125rem;
+    color: var(--contrast-light-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: relative;
+
+}
+
+
+
+
+.simple-button {
+    border: none;
+    background-color: unset;
+}
+
+.simple-button--add {
+    color: var(--primary-color);
+}
+
+.simple-button--delete {
+    color: var(--warning-color);
+}
+
+.simple-button--edit {
+    color: var(--success-color);
+}
+.button:hover{
+    background-color: #a90202;
+}
+
+
+@keyframes glowing {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 400% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+    .contacto {
+        margin-top: 60px;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .contacto {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+
+
+
+    }
+
+    .carta__form {
+        grid-area: 1/1;
+        width: 100%;
+        height: calc(100% - 60px);
+
+
+
+    }
+
+    .carta__gif {
+        display: none;
+    }
+}
